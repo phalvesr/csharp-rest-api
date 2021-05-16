@@ -114,7 +114,7 @@ namespace Commands.Controllers
             // Map our command to a command update
             var commandToPatch = Mapper.Map<CommandUpdate>(registerComand);
             
-            // Apply out JsonPatch to out command! 
+            // Apply JsonPatch to our command! 
             patchDocument.ApplyTo(commandToPatch, ModelState);
 
             // Check if everything went well
